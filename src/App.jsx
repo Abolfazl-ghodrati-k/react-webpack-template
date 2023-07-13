@@ -14,7 +14,7 @@ export default function App() {
   const { data, loading, error } = useQuery(FILMS_QUERY);
 
   if (loading) return "Loading...";
-  if (error) return <pre>{error.message}</pre>
+  if (error) return <pre>SpaceX: <br /> {error.message}</pre>
 
   return (
     <div>
